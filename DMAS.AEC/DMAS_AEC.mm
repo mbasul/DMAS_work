@@ -13,7 +13,7 @@
 <node CREATED="1731938944075" ID="ID_1258330533" MODIFIED="1731938948843" TEXT="Dunst, Robert"/>
 </node>
 </node>
-<node CREATED="1731936987795" ID="ID_758074925" MODIFIED="1737027101508" POSITION="right" TEXT="Projektinfra">
+<node CREATED="1731936987795" ID="ID_758074925" MODIFIED="1731938353846" POSITION="right" TEXT="Projekt">
 <node CREATED="1731936991355" ID="ID_625889825" MODIFIED="1731936996416" TEXT="ab Sept &apos;24"/>
 <node CREATED="1731938339146" ID="ID_1234400798" LINK="mailto:40536_Data_Managment_and_Data_Analytics@sulzer" MODIFIED="1731938339146" TEXT="Intern 40536_Data_Managment_and_Data_Analytics@sulzer"/>
 <node CREATED="1733921060500" ID="ID_1459421880" LINK="https://portal.sulzer.de/confip/pages/viewpage.action?pageId=174268689" MODIFIED="1733921090245" TEXT="DMAS-Confluence"/>
@@ -36,10 +36,6 @@
 <node CREATED="1731938734385" ID="ID_1758176636" MODIFIED="1731938743790" TEXT="Showcases"/>
 <node CREATED="1731938744530" ID="ID_1714183212" MODIFIED="1731938756101" TEXT="BI/DI-Artikel"/>
 </node>
-</node>
-<node CREATED="1737027113041" ID="ID_1784283934" MODIFIED="1737027121637" POSITION="right" TEXT="Projektans&#xe4;tze">
-<node CREATED="1737027122631" ID="ID_818574958" MODIFIED="1737027127780" TEXT="MetroPT2"/>
-<node CREATED="1737027128352" ID="ID_668902548" LINK="https://dataverse.harvard.edu/dataverse/atlas" MODIFIED="1737027160549" TEXT="Atlas of Economic Complexity"/>
 </node>
 <node CREATED="1731495550520" ID="ID_681066088" MODIFIED="1733922258960" POSITION="left" TEXT="Util">
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
@@ -71,7 +67,7 @@
 <node CREATED="1733925034818" ID="ID_378743843" MODIFIED="1733925042269" TEXT="Data-Sets">
 <node CREATED="1733925043184" ID="ID_1229106412" MODIFIED="1733925045101" TEXT="EU"/>
 <node CREATED="1733925075163" ID="ID_1751516892" MODIFIED="1733925085573" TEXT="Atlas of Economic Complexity"/>
-<node CREATED="1733925895552" ID="ID_1745001423" MODIFIED="1737027187148" TEXT="MetroPT2"/>
+<node CREATED="1733925895552" ID="ID_1745001423" MODIFIED="1733925902700" TEXT="Metreo"/>
 </node>
 <node CREATED="1737021505189" ID="ID_822059807" MODIFIED="1737021507467" TEXT="Literatur">
 <node CREATED="1737021508772" LINK="https://www.amazon.de/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1098125975/ref=asc_df_1098125975?mcid=4545fae3e04c342c8e5c0de4eb7ea6b9&amp;th=1&amp;psc=1&amp;tag=googshopde-21&amp;linkCode=df0&amp;hvadid=697049791175&amp;hvpos=&amp;hvnetw=g&amp;hvrand=8810783122473564478&amp;hvpone=&amp;hvptwo=&amp;hvqmt=&amp;hvdev=c&amp;hvdvcmdl=&amp;hvlocint=&amp;hvlocphy=1004234&amp;hvtargid=pla-1651497364252&amp;psc=1&amp;gad_source=1" MODIFIED="1737021508772" TEXT="https://www.amazon.de/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1098125975/ref=asc_df_1098125975?mcid=4545fae3e04c342c8e5c0de4eb7ea6b9&amp;th=1&amp;psc=1&amp;tag=googshopde-21&amp;linkCode=df0&amp;hvadid=697049791175&amp;hvpos=&amp;hvnetw=g&amp;hvrand=8810783122473564478&amp;hvpone=&amp;hvptwo=&amp;hvqmt=&amp;hvdev=c&amp;hvdvcmdl=&amp;hvlocint=&amp;hvlocphy=1004234&amp;hvtargid=pla-1651497364252&amp;psc=1&amp;gad_source=1"/>
