@@ -12,3 +12,9 @@ create transient database if not exists DMAS
 create or replace schema AOEC
     comment = 'Atlas of Economic Complexity'
 ;
+
+create stage DMAS.PUBLIC.FILES_UPLOAD
+    encryption = (type = 'SNOWFLAKE_SSE')
+;
+
+list @DMAS.PUBLIC.FILES_UPLOAD;
