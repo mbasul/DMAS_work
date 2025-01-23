@@ -16,5 +16,10 @@ create or replace schema AOEC
 create stage DMAS.PUBLIC.FILES_UPLOAD
     encryption = (type = 'SNOWFLAKE_SSE')
 ;
-
 list @DMAS.PUBLIC.FILES_UPLOAD;
+
+create stage DMAS.AOEC.AOEC_FILES_HS92
+    encryption = (type = 'SNOWFLAKE_SSE')
+;
+list @DMAS.AOEC.AOEC_FILES_HS92;
+
