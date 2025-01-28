@@ -1,0 +1,1 @@
+snowsql -a OZENGPY-GW03384 -u MBASUL250121 -o log_file=.\upload.hs92.product_country2.log.txt -f .\aoec.hs92.product_country2.upload.csv.sql
