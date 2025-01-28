@@ -1,0 +1,8 @@
+name: app_environment
+channels:
+  - snowflake
+dependencies:
+  - modin=*
+  - pandas=*
+  - pandas-datareader=*
+  - snowflake-snowpark-python=*
