@@ -23,14 +23,15 @@ create or replace transient table DMAS.AOEC.RAW_PRODUCT_HS92 (
 
 
 create or replace transient table DMAS.AOEC.RAW_PRODUCT_COUNTRY2_HS92 (
-        PARTNER_COUNTRY_ID      integer,
-        PRODUCT_ID              integer,
+        ID			integer,
+	COUNTRY_ID      	integer,
+	PARTNER_COUNTRY_ID      integer,
         YEAR                    integer,
-        EXPORT_VALUE            integer,
-        IMPORT_VALUE            integer,
+        PRODUCT_ID              integer,
+        EXPORT_VALUE            float,
+        IMPORT_VALUE            float,
         ECI                     float,
-        COI                     float,
-        PCI                     float
+        COI                     float
     )
     data_retention_time_in_days = 0
 ;
