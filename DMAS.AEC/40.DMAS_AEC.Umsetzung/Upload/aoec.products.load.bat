@@ -1,1 +1,1 @@
-snowsql -a OZENGPY-GW03384 -u MBASUL250121 -o log_file=.\upload.products.log.txt -f .\aoec.hs92.upload.products.sql
+snowsql -a OZENGPY-GW03384 -u MBASUL250121 -o log_file=.\upload.products.log.txt -f .\aoec.products.upload.sql

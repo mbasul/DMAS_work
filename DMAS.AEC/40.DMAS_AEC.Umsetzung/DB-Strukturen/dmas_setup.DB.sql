@@ -23,3 +23,8 @@ create stage DMAS.AOEC.AOEC_FILES_HS92
 ;
 list @DMAS.AOEC.AOEC_FILES_HS92;
 
+
+create or replace stage DMAS.AOEC.AOEC_FILES_HS12
+    encryption = (type = 'SNOWFLAKE_SSE')
+;
+list @DMAS.AOEC.AOEC_FILES_HS12;
