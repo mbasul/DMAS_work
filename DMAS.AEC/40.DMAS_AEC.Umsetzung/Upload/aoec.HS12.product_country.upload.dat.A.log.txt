@@ -1,0 +1,19 @@
+2025-02-06 07:28:10,272 (22956/MainThread) snowflake.cli.common.util_cli INFO       util_cli:768  - REQUESTS_CA_BUNDLE is already set to C:\Users\balzer\AppData\Local\Temp\_MEI340042\certifi\cacert.pem
+2025-02-06 07:28:10,272 (22956/MainThread) snowflake.connector.connection INFO     connection:399  - Snowflake Connector for Python Version: 3.10.0, Python Version: 3.8.18, Platform: Windows-10-10.0.19045-SP0
+2025-02-06 07:28:10,997 (22956/MainThread) snowflake.connector.cursor INFO         cursor:1149 - Number of results in first chunk: 1
+2025-02-06 07:28:11,158 (22956/MainThread) snowflake.connector.cursor INFO         cursor:1149 - Number of results in first chunk: 1
+2025-02-06 07:28:11,227 (22956/MainThread) snowflake.connector.cursor INFO         cursor:1149 - Number of results in first chunk: 1
+2025-02-06 07:28:11,300 (22956/MainThread) snowflake.connector.cursor INFO         cursor:1149 - Number of results in first chunk: 1
+2025-02-06 07:28:11,413 (22956/MainThread) snowflake.connector.cursor INFO         cursor:1149 - Number of results in first chunk: 1
+2025-02-06 07:38:19,150 (22956/MainThread) __main__ ERROR      eventloop:813  - error with sql: 'alter warehouse DMAS_2X suspend;'
+Traceback (most recent call last):
+  File "eventloop.py", line 757, in run_cli
+  File "cli\sqlexecute.py", line 491, in run
+  File "cli\sqlexecute.py", line 574, in execute_normal_sql
+  File "connector\cursor.py", line 1080, in execute
+  File "connector\errors.py", line 290, in errorhandler_wrapper
+  File "connector\errors.py", line 345, in hand_to_other_handler
+  File "connector\errors.py", line 221, in default_errorhandler
+snowflake.connector.errors.ProgrammingError: 090064 (22000): 01ba34ea-0103-f6f4-0003-32fe0005b046: Invalid state. Warehouse 'DMAS_2X' cannot be suspended.
+2025-02-06 07:38:19,150 (22956/MainThread) snowflake.connector.connection INFO     connection:762  - closed
+2025-02-06 07:38:19,181 (22956/MainThread) snowflake.connector.connection INFO     connection:768  - No async queries seem to be running, deleting session
