@@ -28,7 +28,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1731936987795" ID="ID_758074925" MODIFIED="1737624975481" POSITION="right" TEXT="Projektinfra">
+<node CREATED="1731936987795" ID="ID_758074925" MODIFIED="1741024987587" POSITION="right" TEXT="Projektinfra">
 <node CREATED="1731936991355" ID="ID_625889825" MODIFIED="1731936996416" TEXT="ab Sept &apos;24"/>
 <node CREATED="1731938339146" ID="ID_1234400798" LINK="mailto:40536_Data_Managment_and_Data_Analytics@sulzer" MODIFIED="1731938339146" TEXT="Intern 40536_Data_Managment_and_Data_Analytics@sulzer"/>
 <node CREATED="1733921060500" ID="ID_1459421880" LINK="https://portal.sulzer.de/confip/pages/viewpage.action?pageId=174268689" MODIFIED="1733921090245" TEXT="DMAS-Confluence">
@@ -48,6 +48,9 @@
 </node>
 </node>
 <node CREATED="1737624974600" ID="ID_1711226852" LINK="https://portal.sulzer.de/confip/pages/viewpage.action?pageId=174276700" MODIFIED="1737625045063" TEXT="Handelsdaten: Ideensammlung f&#xfc;r Data Analysis and Visualisation - Data Management and Analytics @Sulzer - Confluence Sulzer"/>
+<node CREATED="1741024987587" ID="ID_1498526971" MODIFIED="1741024991653" TEXT="GitHub">
+<node CREATED="1741024993762" ID="ID_1860587523" MODIFIED="1741024997293" TEXT="MBASUL"/>
+</node>
 </node>
 <node CREATED="1731938564281" ID="ID_169576472" MODIFIED="1731938566278" POSITION="right" TEXT="2dos">
 <node CREATED="1731938591306" ID="ID_344568405" MODIFIED="1731938608463" TEXT="Dokumente in Confluence">
