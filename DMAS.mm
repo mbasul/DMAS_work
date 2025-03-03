@@ -18,6 +18,7 @@
 <node CREATED="1731938883476" ID="ID_544312409" MODIFIED="1731938888419" TEXT="Nell, Philip"/>
 <node CREATED="1731938889755" ID="ID_497721578" MODIFIED="1731938931335" TEXT="Khutornova, Irina"/>
 <node CREATED="1731938944075" ID="ID_1258330533" MODIFIED="1731938948843" TEXT="Dunst, Robert"/>
+<node CREATED="1739262821296" ID="ID_821761530" MODIFIED="1739262833340" TEXT="Prutky, Michael"/>
 </node>
 </node>
 <node CREATED="1737530184222" ID="ID_1343374436" MODIFIED="1737530189107" TEXT="Ltg.">
@@ -30,9 +31,13 @@
 <node CREATED="1731936987795" ID="ID_758074925" MODIFIED="1737624975481" POSITION="right" TEXT="Projektinfra">
 <node CREATED="1731936991355" ID="ID_625889825" MODIFIED="1731936996416" TEXT="ab Sept &apos;24"/>
 <node CREATED="1731938339146" ID="ID_1234400798" LINK="mailto:40536_Data_Managment_and_Data_Analytics@sulzer" MODIFIED="1731938339146" TEXT="Intern 40536_Data_Managment_and_Data_Analytics@sulzer"/>
-<node CREATED="1733921060500" ID="ID_1459421880" LINK="https://portal.sulzer.de/confip/pages/viewpage.action?pageId=174268689" MODIFIED="1733921090245" TEXT="DMAS-Confluence"/>
-<node CREATED="1738226478066" ID="ID_292703015" LINK="https://portal.sulzer.de/confip/display/DMAS/Data+Management+and+Analytics+@Sulzer" MODIFIED="1738226485131" TEXT="DMAS-Jira"/>
+<node CREATED="1733921060500" ID="ID_1459421880" LINK="https://portal.sulzer.de/confip/pages/viewpage.action?pageId=174268689" MODIFIED="1733921090245" TEXT="DMAS-Confluence">
+<node CREATED="1737017440056" ID="ID_172218822" LINK="https://portal.sulzer.de/confip/display/DMAS/Konzepte" MODIFIED="1737017440056" TEXT="https://portal.sulzer.de/confip/display/DMAS/Konzepte"/>
+<node CREATED="1737447512634" ID="ID_1908626908" LINK="https://portal.sulzer.de/confip/display/DMAS/MVP+und+weitere+Ausbaustufen" MODIFIED="1737447512634" TEXT="https://portal.sulzer.de/confip/display/DMAS/MVP+und+weitere+Ausbaustufen"/>
+</node>
+<node CREATED="1738226478066" ID="ID_292703015" LINK="https://portal.sulzer.de/confip/display/DMAS/Data+Management+and+Analytics+@Sulzer" MODIFIED="1738226485131" TEXT="DMAS-Jira">
 <node CREATED="1731938362377" ID="ID_469292470" LINK="https://portal.sulzer.de/jira/projects/DMAS/summary" MODIFIED="1731938362377" TEXT="https://portal.sulzer.de/jira/projects/DMAS/summary"/>
+</node>
 <node CREATED="1733921049804" ID="ID_827504309" MODIFIED="1733921052807" TEXT="_Archiv">
 <node CREATED="1731938352570" ID="ID_39178485" LINK="https://portal.sulzer.de/confip/display/DMNA/DMAS+-+Data+Management+and+Analytics+@Sulzer" MODIFIED="1733921114622" TEXT="https://portal.sulzer.de/confip/display/DMNA/DMAS+-+Data+Management+and+Analytics+@Sulzer">
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_39178485" ENDARROW="Default" ENDINCLINATION="415;0;" ID="Arrow_ID_705180945" SOURCE="ID_344568405" STARTARROW="None" STARTINCLINATION="415;0;"/>
@@ -42,8 +47,6 @@
 </node>
 </node>
 </node>
-<node CREATED="1737017440056" ID="ID_172218822" LINK="https://portal.sulzer.de/confip/display/DMAS/Konzepte" MODIFIED="1737017440056" TEXT="https://portal.sulzer.de/confip/display/DMAS/Konzepte"/>
-<node CREATED="1737447512634" ID="ID_1908626908" LINK="https://portal.sulzer.de/confip/display/DMAS/MVP+und+weitere+Ausbaustufen" MODIFIED="1737447512634" TEXT="https://portal.sulzer.de/confip/display/DMAS/MVP+und+weitere+Ausbaustufen"/>
 <node CREATED="1737624974600" ID="ID_1711226852" LINK="https://portal.sulzer.de/confip/pages/viewpage.action?pageId=174276700" MODIFIED="1737625045063" TEXT="Handelsdaten: Ideensammlung f&#xfc;r Data Analysis and Visualisation - Data Management and Analytics @Sulzer - Confluence Sulzer"/>
 </node>
 <node CREATED="1731938564281" ID="ID_169576472" MODIFIED="1731938566278" POSITION="right" TEXT="2dos">
@@ -67,6 +70,10 @@
 <node CREATED="1737455990076" ID="ID_829403842" LINK="https://dataverse.harvard.edu/dataverse/atlas" MODIFIED="1737455998845" TEXT="AoEC Datavers">
 <node CREATED="1737465825193" ID="ID_1803542031" LINK="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/T4CHWJ" MODIFIED="1737465832411" TEXT="International Trade Data (HS, 92)"/>
 <node CREATED="1738606592954" ID="ID_905080760" LINK="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/YAVJDF" MODIFIED="1738606604312" TEXT="International Trade Data (HS, 12)"/>
+<node CREATED="1739810677446" ID="ID_488482435" LINK="https://portal.sulzer.de/confip/display/DMAS/Datenmodell" MODIFIED="1739810686943" TEXT="Datenmodell HS12"/>
+</node>
+<node CREATED="1739778766831" ID="ID_610370589" MODIFIED="1739778773591" TEXT="Darstellungen">
+<node CREATED="1739810626982" ID="ID_1037933769" LINK="https://portal.sulzer.de/confip/pages/viewpage.action?pageId=174276700&amp;preview=/174276700/174276704/image-2025-1-21_12-8-5.png" MODIFIED="1739810637235" TEXT="Trade Performance"/>
 </node>
 </node>
 </node>
@@ -107,12 +114,52 @@
 </node>
 </node>
 <node CREATED="1733921792375" ID="ID_1927045277" MODIFIED="1737447501585" POSITION="left" TEXT="Ideen">
-<node CREATED="1733921818014" ID="ID_50752530" MODIFIED="1733921823509" TEXT="Qualit&#xe4;tsmanagement">
+<node CREATED="1733921818014" FOLDED="true" ID="ID_50752530" MODIFIED="1739810427398" TEXT="Qualit&#xe4;tsmanagement">
 <node CREATED="1733921796214" ID="ID_1655015593" MODIFIED="1733921802064" TEXT="Prozessqualit&#xe4;t">
 <node CREATED="1733921803839" ID="ID_1220583855" MODIFIED="1733921807656" TEXT="PQ und KI"/>
 </node>
 <node CREATED="1733921828959" ID="ID_203597741" MODIFIED="1733921833413" TEXT="Beispiele">
 <node CREATED="1733921863895" LINK="https://www.roxtra.com/" MODIFIED="1733921863895" TEXT="https://www.roxtra.com/"/>
+</node>
+</node>
+<node CREATED="1740556261000" ID="ID_1538783399" LINK="https://en.wikipedia.org/wiki/Shiny_" MODIFIED="1740556261000" TEXT="https://en.wikipedia.org/wiki/Shiny_(web_framework)">
+<node COLOR="#999999" CREATED="1740556293365" ID="ID_1184420795" MODIFIED="1740556307204" TEXT="DSPG, 26.02.2025">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+</node>
+<node CREATED="1740556274757" ID="ID_1141402276" LINK="https://posit.cloud/" MODIFIED="1740556274757" TEXT="https://posit.cloud/">
+<node COLOR="#999999" CREATED="1740556293365" ID="ID_1727959885" MODIFIED="1740556307204" TEXT="DSPG, 26.02.2025">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+</node>
+<node CREATED="1740556281095" ID="ID_1513949010" LINK="https://www.data-to-viz.com/" MODIFIED="1740556281095" TEXT="https://www.data-to-viz.com/">
+<node COLOR="#999999" CREATED="1740556293365" ID="ID_1387456590" MODIFIED="1740556307204" TEXT="DSPG, 26.02.2025">
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+</node>
+</node>
+<node CREATED="1739778793255" ID="ID_8603080" MODIFIED="1739778800930" POSITION="left" TEXT="Knowhow">
+<node CREATED="1739778802959" ID="ID_1507899630" MODIFIED="1739778814242" TEXT="Geo-Information">
+<node CREATED="1739778816111" ID="ID_1860581498" MODIFIED="1739779356513" TEXT="Streamlit">
+<node CREATED="1739778850589" ID="ID_908301405" LINK="https://www.youtube.com/watch?v=hn2WqRX75DI" MODIFIED="1739778858509" TEXT="Build Interactive Geospatial Web Apps with Leafmap and Streamlit">
+<node CREATED="1739779372239" ID="ID_1924414542" LINK="../../../../_Einarbeitung/Data_Management/Data_Engineering/Snowflake/Snowflake.mm" MODIFIED="1739779419487" TEXT="Mehr Info"/>
+</node>
+<node CREATED="1739810336750" ID="ID_977511667" LINK="https://docs.streamlit.io/develop/api-reference/charts" MODIFIED="1739810439666" TEXT="Streamlit - Chart-Elemente"/>
+<node CREATED="1739810442246" ID="ID_668066329" LINK="https://blog.streamlit.io/how-to-analyze-geospatial-snowflake-data-in-streamlit/" MODIFIED="1739810473314" TEXT="How to analyze geospatial data with Streamlit"/>
+</node>
+<node CREATED="1739810299549" ID="ID_1595422995" MODIFIED="1739810309383" TEXT="Allgemein">
+<node CREATED="1739810236868" ID="ID_1039954154" LINK="https://medium.com/snowflake/plotting-f1-circuit-locations-into-a-map-on-streamlit-using-folium-3d1f1f46b039" MODIFIED="1739810244514" TEXT="Plotting F1 Circuit Locations into a map on Streamlit using Folium"/>
+<node CREATED="1739810257807" ID="ID_1631638208" LINK="https://blog.streamlit.io/how-to-make-a-culture-map/" MODIFIED="1739810268230" TEXT="How to make a culture map"/>
+</node>
+<node CREATED="1739810312238" ID="ID_934723339" MODIFIED="1739810318390" TEXT="python-Module">
+<node CREATED="1739784142960" ID="ID_795464300" LINK="https://book.leafmap.org/index.html" MODIFIED="1739784159199" TEXT="leafmap"/>
+<node CREATED="1739810321607" ID="ID_503570667" MODIFIED="1739810326944" TEXT="folium"/>
+</node>
+<node CREATED="1740473326259" ID="ID_953305339" LINK="https://geopandas.org/en/stable/index.html" MODIFIED="1740473371561" TEXT="geopandas">
+<node CREATED="1740473332202" ID="ID_743962669" LINK="https://geopandas.org/en/stable/docs/reference/api/geopandas.read_file.html" MODIFIED="1740473348993" TEXT="read_file"/>
+</node>
+<node CREATED="1740936536984" ID="ID_1458693383" MODIFIED="1740936539233" TEXT="Tableau">
+<node CREATED="1740936540689" LINK="https://www.youtube.com/watch?v=ebjDwX8sUMk" MODIFIED="1740936540689" TEXT="https://www.youtube.com/watch?v=ebjDwX8sUMk"/>
 </node>
 </node>
 </node>
@@ -255,7 +302,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1736927929647" FOLDED="true" ID="ID_515720364" MODIFIED="1738226847541" TEXT="PT2-Review2025-01-15">
+<node CREATED="1736927929647" FOLDED="true" ID="ID_515720364" MODIFIED="1739810653758" TEXT="PT2-Review2025-01-15">
 <node CREATED="1736931070500" ID="ID_1264243324" MODIFIED="1736931085759" TEXT="Literatur">
 <node CREATED="1736931077259" LINK="https://medium.com/@anshuman.mandal.01/building-autoencoders-in-keras-a-comprehensive-guide-to-various-architectures-and-applications-840d32ef1ba9" MODIFIED="1736931077259" TEXT="https://medium.com/@anshuman.mandal.01/building-autoencoders-in-keras-a-comprehensive-guide-to-various-architectures-and-applications-840d32ef1ba9"/>
 <node CREATED="1736928269763" ID="ID_1029539353" MODIFIED="1736928271288" TEXT="https://blog.keras.io/building-autoencoders-in-keras.html"/>
@@ -275,7 +322,7 @@
 </node>
 <node CREATED="1736929174331" ID="ID_246545646" MODIFIED="1736929186072" TEXT="geht nicht um den Inhalt"/>
 </node>
-<node CREATED="1731495550520" FOLDED="true" ID="ID_291229478" MODIFIED="1738226843489" TEXT="Sync 2025-01-16">
+<node CREATED="1731495550520" FOLDED="true" ID="ID_291229478" MODIFIED="1739810656214" TEXT="Sync 2025-01-16">
 <font NAME="SansSerif" SIZE="12"/>
 <node CREATED="1731495388112" FOLDED="true" ID="ID_1861636031" MODIFIED="1737017357300" TEXT="Teilnehmer">
 <node CREATED="1731495395471" ID="ID_1983554924" MODIFIED="1733922281053" TEXT="Traichel, Nele">
