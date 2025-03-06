@@ -27,20 +27,22 @@ select *
 create or replace transient table DTAMART_HS12_TRANSACTIONS (
     ID                                  integer identity,
     TAB                                 varchar(16),
-    TAB_ID                              integer,
+    SRC_ID                              integer,
     
-    COUNTRY_ID			                number,
-    PARTNER_COUNTRY_ID	                number,
-    YEAR				                number,
-    PRODUCT_ID			                number,
-    EXPORT_VALUE		                float,
-    IMPORT_VALUE		                float,
-    COI				                    float,
-    ECI				                    float
+    COUNTRY_ID                          number,
+    COUNTRY_ISO_3                       varchar(3),
+    PARTNER_COUNTRY_ID                  number,
+    PARTNER_COUNTRY_ISO_3               varchar(3),
+    YEAR                                number,
+    PRODUCT_ID                          number,
+    EXPORT_VALUE                        float,
+    IMPORT_VALUE                        float,
+    COI                                 float,
+    ECI                                 float
 );              
 
 insert into DTAMART_HS12_TRANSACTIONS (
-        TAB, TAB_ID, COUNTRY_ID, PARTNER_COUNTRY_ID, YEAR, PRODUCT_ID, EXPORT_VALUE, IMPORT_VALUE, COI, ECI
+        TAB, SRC_ID, COUNTRY_ID, PARTNER_COUNTRY_ID, YEAR, PRODUCT_ID, EXPORT_VALUE, IMPORT_VALUE, COI, ECI
     )
     with ALL_DATA as (
         select 'CCPY_1' as Tab, 
