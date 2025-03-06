@@ -2,69 +2,55 @@
 -- =========
 --      Datamart
 
-select * from DMAS.INFORMATION_SCHEMA.COLUMNS
-    where TABLE_CATALOG = 'DMAS'
-      and TABLE_SCHEMA = 'AOEC'
-      and TABLE_NAME = 'RAW_HS12_COUNTRY_COUNTRY_PRODUCT_YEAR_1'
-    order by TABLE_NAME, ORDINAL_POSITION
-;
-
 -- ------------------------------------------------------------------------------------
-select * 
-    from (select COLUMN_NAME, 
-                 replace(replace(replace(TABLE_NAME, 'PRODUCT', 'PROD'), 'COUNTRY', 'CTRY'), 'YEAR', 'Y') AS TAB,
-                 1 as CNT 
-              from INFORMATION_SCHEMA.COLUMNS
-              where TABLE_CATALOG = 'DMAS' and TABLE_SCHEMA = 'AOEC' and TABLE_NAME like 'HS12%'
-         ) x
-         pivot (sum(x.CNT) 
-             for TAB in (any order by TAB)
-        )
-    order by COLUMN_NAME
+create or replace transient table DMAS.AOEC.DTAMART_HS12_TRANSACTIONS (
+	ID NUMBER(38,0) autoincrement start 1 increment 1 noorder,
+	TAB VARCHAR(16),
+	SRC_ID NUMBER(38,0),
+	CONTINENT varchar,
+    COUNTRY_ID NUMBER(38,0),
+	COUNTRY_ISO3 VARCHAR(3),
+	PARTNER_CONTINENT varchar,
+    PARTNER_COUNTRY_ID NUMBER(38,0),
+	PARTNER_COUNTRY_ISO3 VARCHAR(3),
+	YEAR NUMBER(38,0),
+	PRODUCT_ID NUMBER(38,0),
+	EXPORT_VALUE FLOAT,
+	IMPORT_VALUE FLOAT,
+	COI FLOAT,
+	ECI FLOAT
+);
+
+alter table DMAS.AOEC.DTAMART_HS12_TRANSACTIONS add CONTINENT varchar;
+alter table DMAS.AOEC.DTAMART_HS12_TRANSACTIONS add PARTNER_CONTINENT varchar;
+
+create or replace view DMAS.AOEC.DTAMART_HS12_TX_C_C_Y(
+	CONTINENT,
+    COUNTRY_ISO3,
+	PARTNER_CONTINENT,
+	PARTNER_COUNTRY_ISO3,
+	YEAR,
+	EXPORT_VALUE
+) as
+    select CONTINENT,
+           COUNTRY_ISO3,
+           PARTNER_COUNTRY_ISO3,
+           YEAR,
+           sum(EXPORT_VALUE) as EXPORT_VALUE
+        from DTAMART_HS12_TRANSACTIONS
+        group by COUNTRY_ISO3, PARTNER_COUNTRY_ISO3, YEAR
 ;
 
--- ------------------------------------------------------------------------------------
-create or replace transient table DTAMART_HS12_TRANSACTIONS (
-    ID                                  integer identity,
-    TAB                                 varchar(16),
-    SRC_ID                              integer,
-    
-    COUNTRY_ID                          number,
-    COUNTRY_ISO_3                       varchar(3),
-    PARTNER_COUNTRY_ID                  number,
-    PARTNER_COUNTRY_ISO_3               varchar(3),
-    YEAR                                number,
-    PRODUCT_ID                          number,
-    EXPORT_VALUE                        float,
-    IMPORT_VALUE                        float,
-    COI                                 float,
-    ECI                                 float
-);              
-
-insert into DTAMART_HS12_TRANSACTIONS (
-        TAB, SRC_ID, COUNTRY_ID, PARTNER_COUNTRY_ID, YEAR, PRODUCT_ID, EXPORT_VALUE, IMPORT_VALUE, COI, ECI
-    )
-    with ALL_DATA as (
-        select 'CCPY_1' as Tab, 
-               ID, COUNTRY_ID, PARTNER_COUNTRY_ID, YEAR, PRODUCT_ID, EXPORT_VALUE, IMPORT_VALUE, COI, ECI
-            from RAW_HS12_COUNTRY_COUNTRY_PRODUCT_YEAR_1
-        union all 
-        select 'CCPY_2' as Tab, 
-               ID, COUNTRY_ID, PARTNER_COUNTRY_ID, YEAR, PRODUCT_ID, EXPORT_VALUE, IMPORT_VALUE, COI, ECI
-            from RAW_HS12_COUNTRY_COUNTRY_PRODUCT_YEAR_2
-        union all 
-        select 'CCPY_4_12_16' as Tab, 
-               ID, COUNTRY_ID, PARTNER_COUNTRY_ID, YEAR, PRODUCT_ID, EXPORT_VALUE, IMPORT_VALUE, COI, ECI
-            from RAW_HS12_COUNTRY_COUNTRY_PRODUCT_YEAR_4_2012_2016
-    )
-    select * from ALL_DATA
+update DMAS.AOEC.DTAMART_HS12_TRANSACTIONS
+        set CONTINENT = y.GROUP_NAME
+    from DMAS.AOEC.LOCATION_GROUP_MEMBER y
+    where y.GROUP_TYPE = 'continent'
+      and y.COUNTRY_ID = DTAMART_HS12_TRANSACTIONS.COUNTRY_ID
 ;
 
-select TAB, count(*) as "#" from DTAMART_HS12_TRANSACTIONS group by TAB order by 1;
-
-create or replace view DMAS_COUNTRIES
-as
-select COUNTRY_ID, NAME_SHORT_EN
-    from RAW_LOCATION_COUNTRY
+update DMAS.AOEC.DTAMART_HS12_TRANSACTIONS
+        set PARTNER_CONTINENT = y.GROUP_NAME
+    from DMAS.AOEC.LOCATION_GROUP_MEMBER y
+    where y.GROUP_TYPE = 'continent'
+      and y.COUNTRY_ID = DTAMART_HS12_TRANSACTIONS.PARTNER_COUNTRY_ID
 ;
-select * from DMAS_COUNTRIES limit 10;
