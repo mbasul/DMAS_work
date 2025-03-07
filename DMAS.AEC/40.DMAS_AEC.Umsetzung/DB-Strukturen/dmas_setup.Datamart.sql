@@ -3,16 +3,30 @@
 --      Datamart
 
 -- ------------------------------------------------------------------------------------
-create or replace transient table DMAS.AOEC.DTAMART_HS12_TRANSACTIONS (
+create or replace transient table DMAS.AOEC.DTAMART_HS12_COUNTRIES (
 	ID NUMBER(38,0) autoincrement start 1 increment 1 noorder,
-	TAB VARCHAR(16),
-	SRC_ID NUMBER(38,0),
 	CONTINENT varchar,
     COUNTRY_ID NUMBER(38,0),
 	COUNTRY_ISO3 VARCHAR(3),
+	COUNTRY_NAME varchar,
+    YEAR NUMBER(4,0),
+	EXPORT_VALUE FLOAT,
+	IMPORT_VALUE FLOAT,
+	COI FLOAT,
+	ECI FLOAT,
+	CNT number
+);
+
+create or replace transient table DMAS.AOEC.DTAMART_HS12_FLOWS (
+	ID NUMBER(38,0) autoincrement start 1 increment 1 noorder,
+	CONTINENT varchar,
+    COUNTRY_ID NUMBER(38,0),
+	COUNTRY_ISO3 VARCHAR(3),
+	COUNTRY_NAME varchar,
 	PARTNER_CONTINENT varchar,
     PARTNER_COUNTRY_ID NUMBER(38,0),
 	PARTNER_COUNTRY_ISO3 VARCHAR(3),
+	PARTNER_COUNTRY_NAME varchar,
 	YEAR NUMBER(38,0),
 	PRODUCT_ID NUMBER(38,0),
 	EXPORT_VALUE FLOAT,
@@ -20,9 +34,6 @@ create or replace transient table DMAS.AOEC.DTAMART_HS12_TRANSACTIONS (
 	COI FLOAT,
 	ECI FLOAT
 );
-
-alter table DMAS.AOEC.DTAMART_HS12_TRANSACTIONS add CONTINENT varchar;
-alter table DMAS.AOEC.DTAMART_HS12_TRANSACTIONS add PARTNER_CONTINENT varchar;
 
 create or replace view DMAS.AOEC.DTAMART_HS12_TX_C_C_Y(
 	CONTINENT,

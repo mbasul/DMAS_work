@@ -1,13 +1,17 @@
--- DMAS HS12
--- =========
---      Datamart
+use warehouse DMAS_2X;
+use database DMAS;
+use schema AOEC;
 
-insert into DTAMART_HS12_TRANSACTIONS (
-        TAB, SRC_ID, 
-		CONTINENT, COUNTRY_ID, 
-		PARTNER_CONTINENT, PARTNER_COUNTRY_ID, 
+--show grants on warehouse DMAS_2X;
+--revoke usage on warehouse DMAS_2X from sysadmin;
+--grant ownership on warehouse DMAS_2X to sysadmin;
+alter warehouse DMAS_2X resume;
+
+truncate table DTAMART_HS12_FLOWS;
+insert into DTAMART_HS12_FLOWS (
+        CONTINENT, COUNTRY_ID, COUNTRY_ISO3, COUNTRY_NAME, 
+		PARTNER_CONTINENT, PARTNER_COUNTRY_ID, PARTNER_COUNTRY_ISO3, PARTNER_COUNTRY_NAME, 
 		YEAR, 
-		PRODUCT_ID, 
 		EXPORT_VALUE, IMPORT_VALUE, COI, ECI
     )
 	with 
@@ -31,11 +35,9 @@ insert into DTAMART_HS12_TRANSACTIONS (
 						 on (a.COUNTRY_ID = b.COUNTRY_ID)
 				where GROUP_TYPE = 'continent'
 		)
-	select TAB, x.ID, 
-		   c.GROUP_NAME as CONTINENT, x.COUNTRY_ID, 
-		   p.GROUP_NAME as PARTNER_CONTINENT, x.PARTNER_COUNTRY_ID, 
+	select c.GROUP_NAME as CONTINENT, x.COUNTRY_ID, c.ISO3_CODE, c.NAME_SHORT_EN,
+		   p.GROUP_NAME as PARTNER_CONTINENT, x.PARTNER_COUNTRY_ID, p.ISO3_CODE, p.NAME_SHORT_EN,
 		   YEAR, 
-		   PRODUCT_ID, 
 		   EXPORT_VALUE, IMPORT_VALUE, COI, ECI
 		from ALL_DATA x
 			 inner join
@@ -47,4 +49,20 @@ insert into DTAMART_HS12_TRANSACTIONS (
 	--limit 100
 ;
 
-select TAB, count(*) as "#" from DTAMART_HS12_TRANSACTIONS group by TAB order by 1;
+truncate table DTAMART_HS12_COUNTRIES;
+insert into DTAMART_HS12_COUNTRIES (
+        CONTINENT, COUNTRY_ID, COUNTRY_ISO3, COUNTRY_NAME, 
+		YEAR, 
+		EXPORT_VALUE, IMPORT_VALUE,
+        CNT
+    )
+	select CONTINENT, COUNTRY_ID, COUNTRY_ISO3, COUNTRY_NAME,
+		   YEAR, 
+		   sum(EXPORT_VALUE) as EXPORT_VALUE, 
+           sum(IMPORT_VALUE) as IMPORT_VALUE,
+           count(*) as CNT
+		from DTAMART_HS12_FLOWS x
+	    group by CONTINENT, COUNTRY_ID, COUNTRY_ISO3, COUNTRY_NAME, YEAR
+	--limit 100
+;
+alter warehouse DMAS_2x suspend;
