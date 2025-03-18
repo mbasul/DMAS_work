@@ -16,13 +16,13 @@ import time
 registry.register('snowflake', 'snowflake.sqlalchemy', 'dialect')
 engine = sql.create_engine(
     'snowflake://{u}:{p}@{a}/{d}/{s}?warehouse={w}&role={r}'.format(
-        u='MBASUL250206',
-        p='4fqyNZzKUeKbH8!',
-        a='THMZMCK-RI66368',
+        u='MBASUL250317',
+        p='gOkmN+6cF=6Yj5jeKRxtN',
+        a='APXGJLP-SB58316',
         r='sysadmin',
         d='DMAS',
         s='AOEC',
-        w='DMAS_2X',
+        w='DMAS_4X',
     )
 )
 
