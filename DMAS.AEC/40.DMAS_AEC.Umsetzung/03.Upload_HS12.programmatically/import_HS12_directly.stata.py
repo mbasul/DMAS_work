@@ -10,6 +10,7 @@ Description:
 
 """
 
+import sys
 import os
 import time
 import pandas as pd
@@ -25,7 +26,7 @@ engine = sqac.create_engine(
         r='sysadmin',
         d='DMAS',
         s='AOEC',
-        w='DMAS_2X',
+        w='COMPUTE_WH',
     )
 )
 

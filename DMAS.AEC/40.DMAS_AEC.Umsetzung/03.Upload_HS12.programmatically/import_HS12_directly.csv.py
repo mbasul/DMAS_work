@@ -1,4 +1,4 @@
-""" import_HS12_directly.py   --   Importieren von HS12-Daten in jeweils eigene Tabellen
+""" import_HS12_directly.py   --   Importieren von HS12-Daten im .csv-Format in jeweils eigene Tabellen
         Tbs.:   tbs.import_CSV_directly.py
 		Ref.:	https://www.datameer.com/blog/loading-data-into-snowflake-with-efficiency/
 
@@ -17,8 +17,8 @@ registry.register('snowflake', 'snowflake.sqlalchemy', 'dialect')
 engine = sql.create_engine(
     'snowflake://{u}:{p}@{a}/{d}/{s}?warehouse={w}&role={r}'.format(
         u='MBASUL250206',
-        p='4fqyNZzKUeKbH8!',
-        a='THMZMCK-RI66368',
+        p='gOkmN+6cF=6Yj5jeKRxtN',
+        a='APXGJLP-SB58316',
         r='sysadmin',
         d='DMAS',
         s='AOEC',
