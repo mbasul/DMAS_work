@@ -1,18 +1,19 @@
 use warehouse DMAS_2X;
 use database DMAS;
 use schema AOEC;
+use role sysadmin;
 
 --show grants on warehouse DMAS_2X;
 --revoke usage on warehouse DMAS_2X from sysadmin;
 --grant ownership on warehouse DMAS_2X to sysadmin;
 alter warehouse DMAS_2X resume;
 
-truncate table DTAMART_HS12_FLOWS;
-insert into DTAMART_HS12_FLOWS (
+truncate table DTAMART_HS12_FLOWS_TOTALS;
+insert into DTAMART_HS12_FLOWS_TOTALS (
         CONTINENT, COUNTRY_ID, COUNTRY_ISO3, COUNTRY_NAME, 
-		PARTNER_CONTINENT, PARTNER_COUNTRY_ID, PARTNER_COUNTRY_ISO3, PARTNER_COUNTRY_NAME, 
-		YEAR, 
-		EXPORT_VALUE, IMPORT_VALUE, COI, ECI
+	PARTNER_CONTINENT, PARTNER_COUNTRY_ID, PARTNER_COUNTRY_ISO3, PARTNER_COUNTRY_NAME, 
+	YEAR, 
+	EXPORT_VALUE, IMPORT_VALUE, COI, ECI
     )
 	with 
 		ALL_DATA as (
@@ -49,19 +50,19 @@ insert into DTAMART_HS12_FLOWS (
 	--limit 100
 ;
 
-truncate table DTAMART_HS12_COUNTRIES;
-insert into DTAMART_HS12_COUNTRIES (
+truncate table DTAMART_HS12_COUNTRIES_TOTALS;
+insert into DTAMART_HS12_COUNTRIES_TOTALS (
         CONTINENT, COUNTRY_ID, COUNTRY_ISO3, COUNTRY_NAME, 
-		YEAR, 
-		EXPORT_VALUE, IMPORT_VALUE,
+	YEAR, 
+	EXPORT_VALUE, IMPORT_VALUE,
         CNT
     )
 	select CONTINENT, COUNTRY_ID, COUNTRY_ISO3, COUNTRY_NAME,
-		   YEAR, 
-		   sum(EXPORT_VALUE) as EXPORT_VALUE, 
-           sum(IMPORT_VALUE) as IMPORT_VALUE,
-           count(*) as CNT
-		from DTAMART_HS12_FLOWS x
+	       YEAR, 
+	       sum(EXPORT_VALUE) as EXPORT_VALUE, 
+               sum(IMPORT_VALUE) as IMPORT_VALUE,
+               count(*) as CNT
+	    from DTAMART_HS12_FLOWS_TOTALS x
 	    group by CONTINENT, COUNTRY_ID, COUNTRY_ISO3, COUNTRY_NAME, YEAR
 	--limit 100
 ;

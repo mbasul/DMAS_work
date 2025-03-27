@@ -45,6 +45,7 @@ try:
  
         # Create table with filename (i.e. "survey1.csv" will load with a table name of survey1)
         filename, _ext = os.path.splitext(os.path.basename(path))
+        table_name = 'RAW_'+file_name.upper()
 
         start_sec = time.time()
         start = time.localtime(start_sec)
@@ -55,7 +56,7 @@ try:
         load_sec = time.time()
         print("=== Loading:   {0:s}  (Load: {1:02d}:{2:02d}:{3:02d})".format(path, start.tm_hour, start.tm_min, start.tm_sec))
         # Store into Snowflake with table name from code above
-        data.to_sql(filename, engine, index = False, chunksize = 20000, if_exists = 'replace')
+        data.to_sql(table_name, engine, index = False, chunksize = 20000, if_exists = 'replace')
         ende_sec = time.time()
         ende = time.localtime(ende_sec)
         print("---     Ready:   {0:5d} [sec]  (Ende: {1:02d}:{2:02d}:{3:02d})".format(int(ende_sec-start_sec), ende.tm_hour, ende.tm_min, ende.tm_sec))

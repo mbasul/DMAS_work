@@ -20,12 +20,13 @@ create transient schema if not exists AOEC
     comment = 'Atlas of Economic Complexity'
 ;
 
-create or replace stage DMAS.PUBLIC.FILES_UPLOAD
+create or replace stage DMAS.AOEC.AOEC_FILES_MASTERDATA
     encryption = (type = 'SNOWFLAKE_SSE')
 ;
-list @DMAS.PUBLIC.FILES_UPLOAD;
-
 create or replace stage DMAS.AOEC.AOEC_FILES_HS12
     encryption = (type = 'SNOWFLAKE_SSE')
 ;
-list @DMAS.AOEC.AOEC_FILES_HS12;
+create or replace stage DMAS.PUBLIC.FILES_UPLOAD
+    encryption = (type = 'SNOWFLAKE_SSE')
+;
+

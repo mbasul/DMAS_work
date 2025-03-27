@@ -22,7 +22,7 @@ engine = sql.create_engine(
         r='sysadmin',
         d='DMAS',
         s='AOEC',
-        w='DMAS_4X',
+        w='DMAS_2X',
     )
 )
 
@@ -33,8 +33,7 @@ csv_input_filepaths = [
 'location_group.csv',
 'location_group_member.csv',
 'product_hs12.csv',
-'product_hs92.csv',
-'product_services_unilateral.csv',
+product_services_unilateral.csv',
 'product_sitc.csv'
 ]
  

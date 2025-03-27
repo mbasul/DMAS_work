@@ -20,7 +20,7 @@ create or replace transient table DTAMART_HS12_TRANSACTIONS (
 create or replace transient table DMAS.AOEC.DTAMART_HS12_COUNTRIES (
 	ID NUMBER(38,0) autoincrement start 1 increment 1 noorder,
 	CONTINENT varchar,
-    COUNTRY_ID NUMBER(38,0),
+        COUNTRY_ID NUMBER(38,0),
 	COUNTRY_ISO3 VARCHAR(3),
 	COUNTRY_NAME varchar,
     YEAR NUMBER(4,0),
@@ -34,11 +34,11 @@ create or replace transient table DMAS.AOEC.DTAMART_HS12_COUNTRIES (
 create or replace transient table DMAS.AOEC.DTAMART_HS12_FLOWS (
 	ID NUMBER(38,0) autoincrement start 1 increment 1 noorder,
 	CONTINENT varchar,
-    COUNTRY_ID NUMBER(38,0),
+        COUNTRY_ID NUMBER(38,0),
 	COUNTRY_ISO3 VARCHAR(3),
 	COUNTRY_NAME varchar,
 	PARTNER_CONTINENT varchar,
-    PARTNER_COUNTRY_ID NUMBER(38,0),
+        PARTNER_COUNTRY_ID NUMBER(38,0),
 	PARTNER_COUNTRY_ISO3 VARCHAR(3),
 	PARTNER_COUNTRY_NAME varchar,
 	YEAR NUMBER(38,0),
