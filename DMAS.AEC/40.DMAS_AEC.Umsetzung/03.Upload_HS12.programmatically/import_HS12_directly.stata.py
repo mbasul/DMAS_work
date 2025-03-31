@@ -30,13 +30,20 @@ engine = sqac.create_engine(
     )
 )
 
-src_path = r'C:\Users\balzer\Documents\Projekte\Sulzer\UserStories_Sulzer\DMAS\DMAS.AEC\10.DMAS_AEC.Materialien\Dataset.HS_12'
+src_path = r'C:\Users\balzer\Documents\Projekte\Sulzer\UserStories_Sulzer\DMAS\DMAS.AEC\10.DMAS_AEC.Materialien\Dataset.HS12'
 input_file_list = [
-	'hs12_country_country_product_year_4_2022.dta',
-	'hs12_country_country_product_year_4_2017_2021.dta',
-	'hs12_country_country_product_year_6_2012_2016.dta',
-	'hs12_country_country_product_year_6_2017_2021.dta',
-	'hs12_country_country_product_year_6_2022.dta'
+    'hs12_country_country_product_year_1.dta',
+    'hs12_country_country_product_year_2.dta',
+    'hs12_country_country_product_year_4_2012_2016.dta',
+    'hs12_country_country_product_year_4_2017_2021.dta',
+    'hs12_country_country_product_year_4_2022.dta',
+    'hs12_country_country_product_year_6_2012_2016.dta',
+    'hs12_country_country_product_year_6_2017_2021.dta',
+    'hs12_country_country_product_year_6_2022.dta',
+    'hs12_country_product_year_1.dta',
+    'hs12_country_product_year_2.dta',
+    'hs12_country_product_year_4.dta',
+    'hs12_country_product_year_6.dta',
 ]
  
 os.chdir(src_path)
