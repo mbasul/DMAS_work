@@ -28,7 +28,9 @@
 <node CREATED="1731938339146" ID="ID_1234400798" LINK="mailto:40536_Data_Managment_and_Data_Analytics@sulzer" MODIFIED="1731938339146" TEXT="Intern 40536_Data_Managment_and_Data_Analytics@sulzer"/>
 <node CREATED="1733921060500" ID="ID_1459421880" LINK="https://portal.sulzer.de/confip/pages/viewpage.action?pageId=174268689" MODIFIED="1733921090245" TEXT="DMAS-Confluence">
 <node CREATED="1741094820505" ID="ID_588064757" MODIFIED="1741094822804" TEXT="https://portal.sulzer.de/confip/display/DMAS/Data+Management+and+Analytics+@Sulzer"/>
-<node CREATED="1737017440056" ID="ID_172218822" LINK="https://portal.sulzer.de/confip/display/DMAS/Konzepte" MODIFIED="1737017440056" TEXT="https://portal.sulzer.de/confip/display/DMAS/Konzepte"/>
+<node CREATED="1737017440056" ID="ID_172218822" LINK="https://portal.sulzer.de/confip/display/DMAS/Konzepte" MODIFIED="1744292854427" TEXT="https://portal.sulzer.de/confip/display/DMAS/Konzepte">
+<icon BUILTIN="button_cancel"/>
+</node>
 <node CREATED="1737447512634" ID="ID_1908626908" LINK="https://portal.sulzer.de/confip/display/DMAS/MVP+und+weitere+Ausbaustufen" MODIFIED="1737447512634" TEXT="https://portal.sulzer.de/confip/display/DMAS/MVP+und+weitere+Ausbaustufen"/>
 </node>
 <node CREATED="1738226478066" ID="ID_292703015" LINK="https://portal.sulzer.de/confip/display/DMAS/Data+Management+and+Analytics+@Sulzer" MODIFIED="1738226485131" TEXT="DMAS-Jira">

@@ -1,0 +1,15 @@
+/DMAS.AEC/10.DMAS_AEC.Materialien
+
+# OS generated files #
+#     Src.:   https://gist.github.com/octocat/9257657
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+*.bak
+*~
