@@ -1,0 +1,1 @@
+snowsql -a APXGJLP-SB58316 -u MBASUL250317 -o log_file=C:\Users\balzer\Documents\Projekte\Sulzer\UserStories_Sulzer\DMAS\DMAS.AEC\40.DMAS_AEC.Umsetzung\02.Upload_MasterData.putCopy\upload.masterdata.log.txt -f aoec.masterdata.upload.sql

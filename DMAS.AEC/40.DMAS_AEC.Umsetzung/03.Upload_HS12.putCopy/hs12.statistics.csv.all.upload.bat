@@ -1,0 +1,1 @@
+snowsql -a APXGJLP-SB58316 -u MBASUL250317 -o log_file=hs12.statistics.csv.all.upload.log.txt -f hs12.statistics.csv.all.upload.sql

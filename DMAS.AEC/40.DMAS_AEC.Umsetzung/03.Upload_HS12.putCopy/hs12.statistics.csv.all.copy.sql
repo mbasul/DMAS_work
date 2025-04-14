@@ -1,0 +1,12 @@
+copy into RAW_HS12_COUNTRY_COUNTRY_PRODUCT_YEAR_1		        from @AOEC_FILES_HS12/RAW_HS12_COUNTRY_COUNTRY_PRODUCT_YEAR_1.csv.gz		    file_format = (format_name = HS12_CSV );
+copy into RAW_HS12_COUNTRY_COUNTRY_PRODUCT_YEAR_2		        from @AOEC_FILES_HS12/RAW_HS12_COUNTRY_COUNTRY_PRODUCT_YEAR_2.csv.gz		    file_format = (format_name = HS12_CSV );
+copy into RAW_HS12_COUNTRY_COUNTRY_PRODUCT_YEAR_4_2012_2016		from @AOEC_FILES_HS12/RAW_HS12_COUNTRY_COUNTRY_PRODUCT_YEAR_4_2012_2016.csv.gz	file_format = (format_name = HS12_CSV );
+copy into RAW_HS12_COUNTRY_COUNTRY_PRODUCT_YEAR_4_2017_2021		from @AOEC_FILES_HS12/RAW_HS12_COUNTRY_COUNTRY_PRODUCT_YEAR_4_2017_2021.csv.gz	file_format = (format_name = HS12_CSV );
+copy into RAW_HS12_COUNTRY_COUNTRY_PRODUCT_YEAR_4_2022		    from @AOEC_FILES_HS12/RAW_HS12_COUNTRY_COUNTRY_PRODUCT_YEAR_4_2022.csv.gz		file_format = (format_name = HS12_CSV );
+copy into RAW_HS12_COUNTRY_COUNTRY_PRODUCT_YEAR_6_2012_2016		from @AOEC_FILES_HS12/RAW_HS12_COUNTRY_COUNTRY_PRODUCT_YEAR_6_2012_2016.csv.gz	file_format = (format_name = HS12_CSV );
+copy into RAW_HS12_COUNTRY_COUNTRY_PRODUCT_YEAR_6_2017_2021		from @AOEC_FILES_HS12/RAW_HS12_COUNTRY_COUNTRY_PRODUCT_YEAR_6_2017_2021.csv.gz	file_format = (format_name = HS12_CSV );
+copy into RAW_HS12_COUNTRY_COUNTRY_PRODUCT_YEAR_6_2022		    from @AOEC_FILES_HS12/RAW_HS12_COUNTRY_COUNTRY_PRODUCT_YEAR_6_2022.csv.gz		file_format = (format_name = HS12_CSV );
+copy into RAW_HS12_COUNTRY_PRODUCT_YEAR_1		                from @AOEC_FILES_HS12/RAW_HS12_COUNTRY_PRODUCT_YEAR_1.csv.gz		            file_format = (format_name = HS12_CSV );
+copy into RAW_HS12_COUNTRY_PRODUCT_YEAR_2		                from @AOEC_FILES_HS12/RAW_HS12_COUNTRY_PRODUCT_YEAR_2.csv.gz		            file_format = (format_name = HS12_CSV );
+copy into RAW_HS12_COUNTRY_PRODUCT_YEAR_4		                from @AOEC_FILES_HS12/RAW_HS12_COUNTRY_PRODUCT_YEAR_4.csv.gz		            file_format = (format_name = HS12_CSV );
+copy into RAW_HS12_COUNTRY_PRODUCT_YEAR_6		                from @AOEC_FILES_HS12/RAW_HS12_COUNTRY_PRODUCT_YEAR_6.csv.gz		            file_format = (format_name = HS12_CSV );
